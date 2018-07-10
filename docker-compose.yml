@@ -1,0 +1,13 @@
+version: '3'
+services:
+  system-eureka:
+    image: line/systemeureka
+#    restart: always
+    ports:
+      - 8000:8000
+
+  system-config:
+    image: line/systemconfig
+#    restart: always
+    ports:
+      - 8001:8001

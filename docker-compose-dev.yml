@@ -1,0 +1,11 @@
+version: '3'
+services:
+  system-eureka:
+    build: system-eureka
+    ports:
+      - 8000:8000
+
+  system-config:
+    build: system-config
+    ports:
+      - 8001:8001
